@@ -6,6 +6,12 @@ body {
     padding: 0;
 }
 
+.slider {
+    width: 80%;
+    height: auto;
+}
+
+
 /* Контейнер */
 .container {
     max-width: 1200px;
@@ -151,59 +157,19 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-   /* @media для адаптивности */
-@media (max-width: 1200px) {
-    /* Для ноутбуков */
-    .slider {
-        width: 70%;
-        height: 250px;
-    }
-    
-    .banner-container, form {
-        width: 350px;
-    }
-}
-
 @media (max-width: 768px) {
-    /* Для планшетов */
-    .slider {
-        width: 80%;
-        height: 200px;
-    }
-
-    .banner-container, form {
-        width: 300px;
-    }
-
-    #prev-btn, #next-btn {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Для телефонов */
-    .slider {
+    nav, .content, .sidebar {
         width: 100%;
-        height: 150px;
+        padding: 10px;
     }
 
-    .banner-container, form {
-        width: 250px;
-        padding: 20px;
+    .menu {
+        display: flex;
+        flex-direction: column;
     }
 
-    #prev-btn, #next-btn {
-        font-size: 1.2rem;
-    }
-    
-    input {
+    .content {
         font-size: 14px;
-        padding: 8px;
-    }
-
-    #submit-btn {
-        font-size: 14px;
-        padding: 8px 20px;
     }
 }
 
